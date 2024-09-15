@@ -56,7 +56,7 @@ const people = [
 const ageCount = people.reduce((acc, current) => {
     if (current.age >= 18) {
         acc.adults += 1;
-
+} else {
         acc.minors += 1;
     }
     return acc;
