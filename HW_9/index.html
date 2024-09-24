@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW_9_Библиотека книг</title>
+</head>
+<link rel="stylesheet" href="style/style.css">
+<body>
+
+    <div class="container">
+    <h1>Интерактивная библиотека книг</h1>
+    <form>
+        <label for="bookTitle">Название книги:</label>
+        <input type="text" id="bookTitle" name="bookTitle" required />
+        <br />
+        <label for="bookAuthor">Автор книги:</label>
+        <input type="text" id="bookAuthor" name="bookAuthor" required />
+        <br />
+        <label for="bookYear">Год издания:</label>
+        <input type="number" id="bookYear" name="bookYear" required />
+        <br />
+        <label for="bookPages">Количество страниц:</label>
+        <input type="number" id="bookPages" name="bookPages" required />
+        <br />
+        <button>Добавить книгу</button>
+    </form>
+
+
+    <div>
+        <h3>Поиск книги</h3>
+        <input type="text" id="searchInput"/>
+        <br />
+    </div>
+
+    <div>
+        <h3>Сортировка книг</h3>
+<select id="sortSelect">
+    <option value="">Выберите сортировку:</option>
+    <option value="title">Название</option>
+    <option value="bookAuthor">Автор</option>
+    <option value="yearUp">Год (по возрастанию)</option>
+    <option value="yearDown">Год (по убыванию)</option>
+</select>
+    </div>
+    
+
+    <!-- <div>
+        <h3>Search</h3>
+        <input type="text" id="searchInput">
+    </div>
+
+    <div>
+        <h3>Sort</h3>
+        <select id="sortSelect">
+            <option value="">Выберите сортировку:</option>
+            <option value="priceUp">Цена (по возрастанию)</option>
+            <option value="priceDown">Цена (по убыванию)</option>
+
+            <option value="countUp">Количество (по возрастанию)</option>
+            <option value="countDown">Количество (по убыванию)</option>
+        </select>
+    </div> -->
+
+    <ul id="bookList"></ul>
+
+</div>
+
+    <script src="./script/script.js"></script>
+
+</body>
+
+</html>
