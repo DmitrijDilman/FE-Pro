@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW_11</title>
+</head>
+<link rel="stylesheet" href="./style/style.css">
+
+<body>
+
+    <!-- Форма пользователей -->
+    <form id="userForm">
+        <input type="number" id="userId" required placeholder="User ID" />
+        <button type="submit">Get User</button>
+    </form>
+    <br>
+
+    <!-- Форма задач -->
+    <form id="todoForm">
+        <input type="number" id="todoId" required placeholder="Todo ID" />
+        <button type="submit">Get Todo</button>
+    </form>
+    <br>
+
+    <!-- Форма коммент -->
+    <form id="commentForm">
+        <input type="number" id="commentId" required placeholder="Comment ID" />
+        <button type="submit">Get Comment</button>
+    </form>
+    <br>
+
+    <!-- Форма поста -->
+    <h2>New Posts</h2>
+    <form id="postForm">
+        <input type="text" id="postTitle" required placeholder="Post Title" />
+        <br />
+        <br />
+        <textarea id="postBody" required placeholder="Post Body"></textarea>
+        <br /> <br />
+        <input type="number" id="postUserId" required placeholder="User ID" />
+        <button type="submit">Submit</button>
+    </form>
+    <br>
+
+    <!-- Контейнеры -->
+    <div id="users-container"></div>
+    <div id="todos-container"></div>
+    <div id="comments-container"></div>
+    <div id="posts-container"></div>
+
+
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
